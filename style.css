@@ -1,0 +1,933 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.breath {
+    background-color: rgba(255, 255, 255, 0.973);
+    height: 13rem;
+}
+
+.breath-wall {
+    background-color: transparent;
+    background-image: url(img/nota-kitabi-piyano-bestesi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 20rem;
+    padding: 2rem;
+    opacity: .8;
+}
+
+.breath-wall-one {
+    background-color: transparent;
+    background-image: url(img/How-to-Read-Piano-Sheet-Music.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 20rem;
+    padding: 2rem;
+    opacity: .8;
+}
+
+.breath-wall-two {
+    background-color: transparent;
+    background-image: url(img/How-to-read-piano-sheet-music-.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 20rem;
+    padding: 2rem;
+    opacity: .8;
+}
+
+.breath-wall-three {
+    background-color: transparent;
+    background-image: url(img/pexels-juan-pablo-serrano-arenas-1246437.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 20rem;
+    padding: 2rem;
+    opacity: .8;
+}
+
+
+/*************************************************** NAVBAR STYLE **********************************************************/
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;                              /* nesneler arasi bosluk esit olacak sekilde yayilir */
+    align-items: center;                                        /* nesneleri merkeze ortalar */
+    min-height: 8vh;
+    background-color: rgba(255, 255, 255, 0.973);
+    z-index: 6;
+}
+
+.navbar-space {
+    display: flex;
+    margin-top: 5px;
+}
+
+.navbar-link {
+    justify-content: space-around;
+    padding: 2px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+.let {
+    letter-spacing: 1px;                                        /* kelimelerin karakterleri arasindaki bosluk */
+    text-align: justify;
+}
+
+.fa-palette {
+    transform: scale(2,2);
+}
+
+.button:hover{
+    color: rgb(233, 150, 122);
+}
+
+
+/*************************************************** MODAL STYLE **********************************************************/
+
+.modal-palet {
+    background: linear-gradient(0deg, rgb(250, 235, 215) 0%, rgba(220,220,220,1) 100%);
+}
+
+.button-palet {
+    background-color: rgb(233, 150, 122);
+}
+
+.modal-items {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-content {
+    border-radius: 0px;
+}
+
+/*************************************************** MODAL STYLE **********************************************************/
+
+.modal-palet-one {
+    background: linear-gradient(0deg, rgb(252, 251, 251) 0%, rgb(226, 216, 203) 100%);
+}
+
+
+/*************************************************** HEADER STYLE **********************************************************/
+
+header {
+    /*background: linear-gradient(0deg, rgb(250, 226, 195) 0%, rgb(236, 236, 236) 100%);*/
+    background-color: transparent;
+    background-image: url(img/What-is-sheet-music_-How-to-read-it-.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    height: 50rem;
+    z-index: -3;
+}
+
+.header>.container {
+    justify-content: flex-start;
+    width: 100%;
+    height: 70%;
+}
+
+.header>.container>.box-name {
+    position: relative;
+    justify-content: flex-start;
+    background-color: rgba(207, 207, 207, 0.664);
+    width: 50%;
+    height: 90%;
+    margin-top: 10px;
+    margin-left: -20px;
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+    border-radius: 10px
+}
+
+.text-animation {
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+
+
+.header>.container>.box-name>.text-animation h1 {
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 3.5rem;
+    color: rgb(71, 79, 88);
+    letter-spacing: 1px;
+    /*animation-name: exampleAnimation;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;*/
+}
+
+/*@keyframes exampleAnimation {
+    0% {color: rgba(239, 239, 239, 0);}
+    35% {color: rgba(239, 239, 239, 0);}
+    from {left: -300px;}
+    to {left: 5px;}
+}*/
+
+.header>.container>.box-name>.text-animation h3 {
+    padding-top: 5px;
+    position: relative;
+    font-size: 1.5rem;
+    color: rgb(71, 79, 88);
+    letter-spacing: 1px;
+    /*animation-name: eAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;*/
+}
+
+/*@keyframes eAnimation {
+    0% {color: rgba(239, 239, 239, 0);}
+    35% {color: rgba(239, 239, 239, 0);}
+    from {left: -300px;}
+    to {left: 10px;}
+}*/
+
+.button-work{
+    margin-top: 20px;
+    margin-left: 35px;
+    border: none;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.button-pop {
+    margin-top: 20px;
+    margin-left: 50px;
+    border: none;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-color: var(--bs-danger);
+    --bs-popover-header-bg: var(--bs-danger);
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 40rem;
+    }
+    .header>.container {
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-left: 20%;
+        width: 100%;
+        height: 85%;
+    }
+    .header>.container>.box-name {
+        display: flex;
+        align-items: center;
+        background-color: rgba(207, 207, 207, 0.664);
+        width: 100%;
+        height: 100%;
+        margin-top: 0px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        border-radius: 10px;
+    }
+    .header>.container>.box-name>.text-animation> h1 {
+        position: relative;
+        padding-bottom: 0px;
+        font-size: 2rem;
+        color: rgb(71, 79, 88);
+        letter-spacing: 1px;
+    }
+    .header>.container>.box-name>.text-animation> h3 {
+        position: relative;
+        padding-bottom: 5px;
+        font-size: 1rem;
+        color: rgb(71, 79, 88);
+        letter-spacing: 1px;
+    }
+    .button-pop {
+        margin-top: 2px;
+        margin-left: 50px;
+        border: none;
+        padding-bottom: 10px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header>.container>.box-name {
+        position: relative;
+        background-color: rgba(207, 207, 207, 0.664);
+        width: 90%;
+        height: 90%;
+        margin-top: 10px;
+        margin-left: -20px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        border-radius: 10px
+    }
+}
+
+
+
+/*************************************************** section ABOUT STYLE **********************************************************/
+
+.section-about {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 48rem;
+    z-index: -3;
+    padding-top: 8rem;
+}
+
+.box-about {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+    /*background-color: rgba(255, 250, 240, 0.925);*/
+    background-color: rgba(233, 150, 122, 0.425);
+    width: 50rem;
+    height: 30rem;
+}
+
+.text-about {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(71, 79, 88);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px rgba(80, 79, 79, 0.479);
+    font-weight: 400;
+    padding: 20px;
+}
+
+.section-about>.box-about>.container>.text-one {
+    font-size: 50px;
+}
+
+.linia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    border-bottom: 0.7px solid rgb(71, 79, 88);
+    box-shadow: 0 5px 5px 0 rgb(44, 49, 54);
+}
+
+@media screen and (max-width: 790px) {
+    .section-about {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(0deg, rgb(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 100%;
+        z-index: -3;
+    }
+    .section-about>.box-about {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        /*background-color: rgba(255, 250, 240, 0.925);*/
+        background-color: rgba(233, 150, 122, 0.425);
+        width: 100%;
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+    }
+    .section-about>.box-about>.container>.text-one {
+        font-size: 30px;
+    }
+    .section-about>.box-about>.container>.linia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        border-bottom: 0.7px solid rgb(71, 79, 88);
+        box-shadow: 0 5px 5px 0 rgb(44, 49, 54);
+    }
+    .text {
+        display: flex;
+        align-items: center;
+        font-size: 0.7em;
+        color: rgb(71, 79, 88);
+        letter-spacing: 1px;
+        text-shadow: 1px 1px rgba(80, 79, 79, 0.479);
+        font-weight: 400;
+        padding: inherit;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .box-about {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        /*background-color: rgba(255, 250, 240, 0.925);*/
+        background-color: rgba(233, 150, 122, 0.425);
+        width: 90%;
+        height: 90%;
+    }
+    .text-about {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: rgb(71, 79, 88);
+        letter-spacing: 1px;
+        text-shadow: 1px 1px rgba(80, 79, 79, 0.479);
+        font-weight: 400;
+        padding: 10px;
+    }
+    .linia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        border-bottom: 0.7px solid rgb(71, 79, 88);
+        box-shadow: 0 5px 5px 0 rgb(44, 49, 54);
+    }
+}
+
+/*************************************************** section ABILITIES STYLE **********************************************************/
+
+.section-abilities {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(253, 245, 230) 0%, rgba(220, 220, 220, 1) 100%);
+    padding-top: 80px;
+    padding-bottom: 30px;
+    height: 50rem;
+}
+
+.box-abilities {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+    background-color: rgba(233, 150, 122, 0.342);
+    width: 60rem;
+    height: 39rem;
+}
+.section-abilities>.box-abilities>.container>.text-one {
+    font-size: 50px;
+}
+.box-abilities>.container>.row {
+    margin: 40px;
+}
+
+.box-abilities>.container>.row>.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.973);
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+    width: 120px;
+    height: 180px;
+    padding: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.box-abilities>.container>.row>.card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.box-abilities>.container>.row>.card> img {
+    margin-top: 20px;
+    padding: 5px;
+    height: 100px;
+}
+
+.img-vray{
+    margin-top: 30px;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+}
+
+.img-ware{
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.box-abilities>.container>.row>.card>.card-body>.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(71, 79, 88);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+    .section-abilities {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(0deg, rgb(253, 245, 230) 0%, rgba(220, 220, 220, 1) 100%);
+        padding-top: 100px;
+        padding-bottom:100px;
+        height: 100%;
+    }
+    
+    .section-abilities>.box-abilities {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        background-color: rgba(233, 150, 122, 0.342);
+        width: 75%;
+        height: 100%;
+        padding: 20px;
+    }
+    .section-abilities>.box-abilities>.container>.text-one {
+        font-size: 30px;
+    }
+    .section-abilities>.box-abilities>.container>.linia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        border-bottom: 0.7px solid rgb(71, 79, 88);
+        box-shadow: 0 5px 5px 0 rgb(44, 49, 54);
+    }
+    .section-abilities>.box-abilities>.container>.row>.card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.973);
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        margin: 5px;
+        border-radius: 10px;
+        width: 5rem;
+        height: 7rem;
+        padding: 30px;
+    }
+    .box-abilities>.container>.row>.card> img {
+        height: 4.7em;
+        margin-bottom: -35px;
+    }
+    .section-abilities>.box-abilities>.container> p {
+        font-size: 20px;
+    }
+    .section-abilities>.box-abilities>.container>.row>.card>.card-body>.card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 600;
+        word-wrap: break-word;
+        color: rgb(71, 79, 88);    
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .box-abilities>.container>.row {
+        margin: 10px;
+    }
+    .box-abilities {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        background-color: rgba(233, 150, 122, 0.342);
+        width: 90%;
+        height: 90%;
+    }
+    .box-abilities>.container>.row>.card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.973);
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        width: 6em;
+        height: 8em;
+        margin: 12px;
+        border-radius: 10px;
+    }
+    .box-abilities>.container>.row>.card> img {
+        height: 3.7em;
+        margin-bottom: -35px;
+    }
+    
+    .img-vray{
+        width: 50px;
+        height: 4em;
+    }
+    
+    .img-ware{
+        width: 50px;
+        height: 4em;
+    }
+    .box-abilities>.container>.row>.card>.card-body>.card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(71, 79, 88);    }
+}
+
+
+/*************************************************** section WORKS STYLE **********************************************************/
+
+.section-works {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(0deg, rgba(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+    padding-top: 90px;
+    padding-bottom: 30px;
+    height: 75rem;
+}
+
+/*.box-works {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+    background: linear-gradient(0deg, rgba(250, 220, 220, 1) 0%, rgba(240, 248, 255, 0.411) 100%);
+    width: 70rem;
+    height: 55rem;
+}*/
+
+.section-works>.container>.text-one {
+    font-size: 50px;
+}
+.section-works>.container>.linia {
+    width: 150px;
+}
+
+.section-works>.container>.row {
+    margin: 40px;
+}
+
+.section-works>.container>.row>.col-md-6>.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.973);
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+    border-radius: 10px;
+}
+
+.section-works>.container>.row>.col-md-6>.card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.section-works>.container>.row>.col-md-6>.card>.card-body>.card-title> a> button {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(71, 79, 88);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.section-works>.container>.row>.col-md-6>.card>.card-body>.card-title> a> button:hover{
+    color: rgb(233, 150, 122);
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #section-works {
+        height: 100%;
+        padding-top: 100px;
+        padding-bottom:100px;
+    }
+    .section-works {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(0deg, rgba(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .section-works>.container>.row>.col-md-6>.card {
+        width: 80%;
+        height: 80%;
+        margin-left: 35px;
+    }
+    .section-works>.container>.text-one {
+        font-size: 40px;
+    }
+    .section-works>.container>.linia {
+        width: 120px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #section-works {
+        height: 90%;
+    }
+    .section-works {
+        display: flex;
+        justify-content: space-around;
+        background: linear-gradient(0deg, rgba(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .section-works>.container>.row {
+        margin: 10px;
+    }
+}
+
+/*************************************************** section INSPIRATION STYLE **********************************************************/
+
+.section-inspiration {
+    display: flex;
+    justify-content: space-around;                              /* nesneler arasi bosluk esit olacak sekilde yayilir */
+    background: linear-gradient(0deg, rgb(253, 245, 230) 0%, rgba(220, 220, 220, 1) 100%);
+    padding-top: 90px;
+    padding-bottom: 30px;
+    height: 90rem;
+}
+
+.section-inspiration>.container>.row>.col-md-6>.card {
+    background-color: rgba(255, 255, 255, 0.973);
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+}
+
+.section-inspiration>.container>.row {
+    margin-bottom: 40px;
+}
+
+.section-inspiration>.container>.text-one {
+    font-size: 50px;
+}
+.section-inspiration>.container>.linia {
+    width: 150px;
+}
+
+.section-inspiration>.container>.row>.col-md-6>.card>.row>.col-md-8>.card-body> p {
+    font-size: 17.5px;
+    color: rgb(71, 79, 88);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.section-inspiration>.container>.row>.col-md-6>.card>.row>.col-md-8>.card-body> h5 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: rgb(36, 40, 44);
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.img-ins {
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+}
+
+.section-inspiration>.container>.row>.col-md-6>.card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 700px) {
+    .section-inspiration {
+        display: flex;
+        justify-content: space-around;                              /* nesneler arasi bosluk esit olacak sekilde yayilir */
+        background: linear-gradient(0deg, rgb(253, 245, 230) 0%, rgba(220, 220, 220, 1) 100%);
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 210rem;
+    }
+    .section-inspiration>.container>.text-one {
+        font-size: 40px;
+    }
+    .section-inspiration>.container>.linia {
+        width: 150px;
+    }
+    .section-inspiration>.container>.row>.col-md-6>.card>.row>.col-md-8>.card-body {
+        margin-top: 30px;
+    }
+    .section-inspiration>.container>.row {
+        margin-bottom: 40px;
+    }
+    .section-inspiration>.container>.row>.col-md-6>.card>.row>.col-md-8>.card-body> p {
+        font-size: 15px;
+    }
+    
+    .section-inspiration>.container>.row>.col-md-6>.card>.row>.col-md-8>.card-body> h5 {
+        font-size: 20px;
+    }
+}
+
+@media screen {
+    .section-inspiration {
+        display: flex;
+        justify-content: space-around;                              /* nesneler arasi bosluk esit olacak sekilde yayilir */
+        background: linear-gradient(0deg, rgb(253, 245, 230) 0%, rgba(220, 220, 220, 1) 100%);
+        padding-top: 90px;
+        padding-bottom: 30px;
+        height: 90%;
+    }
+    .section-inspiration>.container>.row>.col-md-6>.card {
+        height: 100%;
+        width: 100%;
+    }
+    .section-inspiration>.container>.row {
+        margin-bottom: 10px;
+    }
+}
+
+/*************************************************** section CONTACT STYLE **********************************************************/
+
+.section-contact {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(0deg, rgb(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 45rem;
+    z-index: -3;
+    padding-top: 8rem;
+}
+
+.box-contact {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+    /*background-color: rgba(210, 180, 140, 0.411);*/
+    background-color: rgba(233, 150, 122, 0.562);
+    width: 50rem;
+    height: 30rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section-contact>.box-contact>.container>.text-one {
+    font-size: 50px;
+}
+.section-contact>.box-contact>.container>.linia {
+    width: 150px;
+}
+
+.button-click {
+    background-color: #483D8B;
+}
+
+.button-click:hover {
+    background-color:#483D8B
+}
+
+@media screen and (max-width: 700px) {
+    .section-contact {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(0deg, rgb(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 200rem;
+        z-index: -3;
+        padding: 5rem;
+    }
+    .box-contact {
+        display: flex;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        /*background-color: rgba(210, 180, 140, 0.411);*/
+        background-color: rgba(233, 150, 122, 0.562);
+        width: 20rem;
+        height: 50rem;
+        padding: 1rem;
+    }
+    .section-contact>.box-contact>.container>.text-one {
+        font-size: 30px;
+    }
+    .section-contact>.box-contact>.container>.linia {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-contact {
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(0deg, rgb(220, 220, 220, 1) 0%, rgb(253, 245, 230) 100%);
+        background-size: cover;
+        background-position: 50% 50%;
+        height: 90%;
+        z-index: -3;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    .box-contact {
+        display: flex;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 34px 20px 0 rgba(80, 79, 79, 0.479), 0 15px 5px 0 rgba(80, 79, 79, 0.479);
+        /*background-color: rgba(210, 180, 140, 0.411);*/
+        background-color: rgba(233, 150, 122, 0.562);
+        width: 90%;
+        height: 90%;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/*************************************************** FOOTER STYLE **********************************************************/
+
+.footer {
+    font-size: 18px;
+    height: 12rem;
+    color: #E6E6FA;
+    word-spacing: 8px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        font-size: 15px;
+        padding: 30px;
+        height: 20rem;
+        color: #E6E6FA;
+        word-spacing: 8px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        font-size: 18px;
+        padding: 30px;
+        height: 90%;
+        color: #E6E6FA;
+        word-spacing: 8px;
+    }
+}

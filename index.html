@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="tr">
+<!-- title -->
+<title> My Portfolio Design </title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+<!-- jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap css 5.02 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/@popperjs/core@2">
+<!-- Animation.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+<!-- navbar-start -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container navbar-space" id="navbar-example">
+            <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-palette px-2"></i>
+            </a>
+            <button type="button" class="navbar-toggler mx-auto" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-space" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-link">
+                    <ul class="navbar-nav" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active let px-2" aria-current="page" href="#">
+                                <i class="fa-solid fa-house-chimney-window px-2"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="text-align: center;" class="nav-link let px-3" href="#section-about">
+                                <i class="fa-solid fa-street-view px-1"></i>About Me
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link let px-3" href="#section-abilities">
+                                <i class="fa-solid fa-hands-holding-circle px-1"></i>Abilities
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link let px-3" href="#section-works">
+                                <i class="fa-brands fa-artstation px-1"></i> Works
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link let px-3" href="#section-inspiration">
+                                <i class="fa-solid fa-heart px-1"></i>Inspiration
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link let px-3" href="#section-contact-me">
+                                <i class="fa-solid fa-address-book px-1"></i>Contact Me
+                            </a>
+                        </li>
+                        <div style="margin-right: 3px;" class="nav-item">
+                            <button type="button" class="btn nav-link let px-4 button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Login
+                            </button>
+                        </div>
+                        <div class="nav-item">
+                            <button type="button" class="btn nav-link let px-4 button" data-bs-toggle="modal" data-bs-target="#eModal">
+                                Join
+                            </button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+<!-- navbar-end -->
+<!-- Modal Login -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-palet">
+            <div class="modal-header">
+                <h5 style="font-weight: bold;" class="modal-title" id="exampleModalLabel"> Login </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="action_page.php" method="post">
+                    <div class=" input-group input d-flex mb-4">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-square-envelope"></i>
+                        </span>
+                        <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Enter your email">
+                        <span id="val_email" class=" mx-2 text-danger" style="font-size: 20px;" ></span>
+                    </div>
+                    <div class="input-group input d-flex mb-3">
+                        <span class="input-group-text ">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+                        <span id="val_password" class=" mx-2 text-danger" style="font-size: 20px;" ></span>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <a style="color: rgb(78, 78, 78);" href="#"> Forgot password ? </a>
+                </form>
+            </div>
+            <div class="modal-footer modal-items">
+                <button type="button" id="button_plt" class="btn let button-palet"> Login </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Login -->
+<!-- Modal Join -->
+<div class="modal fade" id="eModal" tabindex="-1" aria-labelledby="eModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content modal-palet">
+        <div class="modal-header">
+            <h5 style="font-weight: bold;" class="modal-title" id="exampleModalLabel"> Join Now </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="action_page.php" method="post">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-image-portrait"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Firstname" aria-label="Firstname" required>
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Lastname" aria-label="Lastname" required>
+                  </div>
+                <div class=" input-group input d-flex mb-4">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-square-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" id="user_email" name="user_email" placeholder="Enter your work email">
+                </div>
+                <div class="input-group input d-flex mb-3">
+                    <span class="input-group-text ">
+                        <i class="fa-solid fa-lock"></i>
+                    </span>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer modal-items">
+            <button type="button" class="btn let button-palet"> Join Now </button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Modal Join -->
+<!-- Modal-click -->
+    <div class="modal fade" id="exxModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-palet-one">
+                <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div style="color: rgb(71, 79, 88); letter-spacing: 1px; font-size: 30px;" class="text-uppercase text-center pt-4" class="modal-body">
+                    ...do you lıke my art works and desıgn? If you lıke ıt, please contact me...<i class=" mx-3 fa-regular fa-face-laugh-beam"></i>
+                </div>
+                <div class="modal-footer modal-items">
+                    <button type="button" class="btn let button-palet" data-bs-dismiss="modal"> OK! </button>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal-click -->
+<!-- Header-start -->
+<header class="header pt-5">
+    <div class="container pt-5">
+        <div class="box-name mt-5 p-3 float-left">
+            <div class="text-animation">
+                <h1 class=" text-dark animated wow zoomInDown">
+                    Hi, I'm Nimet
+                    <i class="fa-solid fa-holly-berry"></i>
+                </h1>
+                <h3 class=" text-dark animated wow zoomInDown" data-wow-delay="1s">
+                    <i class="fa-solid fa-highlighter"></i>
+                    Interior Architect 
+                </h3>
+                <h3 class=" text-dark animated wow zoomInDown" data-wow-delay="1s" style="padding-left: 10px;">
+                    <i class="fa-solid fa-earth-oceania"></i>
+                    Designer | Web Designer
+                </h3>
+                <h3 class=" text-dark animated wow zoomInDown" data-wow-delay="1s" style="padding-left: 20px;">
+                    <i class="fa-solid fa-marker"></i>
+                    Artist | Digital Artist 
+                </h3>
+                <h3 class=" text-dark animated wow zoomInDown" data-wow-delay="1s" style="padding-left: 29px;"> 
+                    <i class="fa-solid fa-paintbrush"></i>
+                    Painter 
+                </h3>
+                <h3 class=" text-dark animated wow zoomInDown" data-wow-delay="1s" style="padding-left: 38px;">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    JR. Frontend Web Development
+                </h3>
+                <!--<a class="btn let px-4 btn-info bg-info bg-gradient button-work" href="#section-works" role="button"> My Works </a>-->
+                <button id="example" type="button" class="btn bg-danger bg-gradient button-pop custom-popover"
+                        data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover"
+                        data-bs-title="Click Inspiration and Works"
+                        data-bs-content="Do you want to see my inspirations and my work?">
+                        MESSAGE!
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header-end -->
+<!-- Main-start -->
+<main>
+<!-- section-about -->
+    <section id="section-about" class="section-about animated wow fadeInUp" data-wow-offset="100">
+        <div class="box-about">
+            <div class="container">
+                <p style="color: rgb(71, 79, 88); letter-spacing: 2px;" class="text-one display-6 text-uppercase text-center pt-4 animated wow fadeInRight"> about me </p>
+                <div class="container linia text-center my-4"></div>
+                <div class="row text-about">
+                    <p class="text">
+                        My name is Nimet. I graduated from Interior Architecture of Çukurova University. I have been interested in art for a long time. I love to design. I try to deal with every branch of art. I am also interested in web design and frontend technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Breath -->
+    <section class="breath-wall">
+            
+    </section>
+<!-- section-abilities -->
+    <section id="section-abilities" class="section-abilities animated wow fadeInUp" data-wow-offset="100">
+        <div class="box-abilities">
+            <div class="container">
+                <p style="color: rgb(71, 79, 88); letter-spacing: 2px;" class="text-one text-uppercase text-center animated wow fadeInLeft"> abılıtıes </p>
+                    <div class="container linia text-center my-3"></div>
+                <div class="row justify-content-center">
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/png-transparent-autodesk-sketchbook-pro-drawing-apps-android-angle-triangle-orange.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                autodesk sketchbook
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/png-transparent-autocad-2015-autodesk-computer-icons-autocad-architecture-design-angle-triangle-autocad.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                autodesk autocad
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/3ds-max-logo-51422AA0E7-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                3DS MAX
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img class="img-vray" src="img/vray-logo-95053DC878-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                v-ray materıal lıbrary
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/sketchup-logo-5248E6166E-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                sketchup
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img class="img-ware" src="img/3d-warehouse-logo-1AAB3253A8-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                3d warehouse 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/lumion-3d-logo-948AF388BD-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                lumıon
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/adobe-photoshop-cc-circle-logo-3BE8AF841D-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                adobe photoshop
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/html5-logo-EF92D240D7-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                html5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/css3-logo-8724075274-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                css3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/bootstrap-5-logo-85A1F11F4F-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                bootstrap
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 card animated wow zoomIn" data-wow-delay="0.1s">
+                        <img src="img/javascript-logo-8892AEFCAC-seeklogo.com.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title text-uppercase text-center">
+                                javascrıpt
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Breath -->
+    <section class="breath-wall-one">
+            
+    </section>
+<!-- section-works -->
+    <section id="section-works" class="section-works animated wow fadeInUp" data-wow-offset="100">
+        <div class="container">
+            <p style="color: rgb(71, 79, 88); letter-spacing: 2px;" class="text-one text-uppercase text-center animated wow fadeInRight"> my works </p>
+            <div class="container linia text-center my-3"></div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 my-4 animated wow rotateIn" data-wow-delay="0.1s">
+                    <div class="card h-100">
+                        <img src="img/2.jpg" class="card-img-top image" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="https://www.behance.net/nimetyourucu013">
+                                    <button type="button" class="btn let px-4 button text-uppercase text-center">
+                                        my ınterıor desıgn works
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-4 animated wow rotateIn" data-wow-delay="0.1s">
+                    <div class="card h-100">
+                        <img src="img/Tom and Jerry .png" class="card-img-top image" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="https://www.behance.net/nimetyourucu013">
+                                    <button type="button" class="btn let px-4 button text-uppercase text-center">
+                                        my dıgıtal art works
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-4 animated wow rotateIn" data-wow-delay="0.1s">
+                    <div class="card h-100">
+                        <img src="img/IMG_20220808_123917.jpg" class="card-img-top image" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="https://www.Instagram.com/artist__parisa">
+                                    <button type="button" class="btn let px-4 button text-uppercase text-center">
+                                        my art works
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-4  animated wow rotateIn" data-wow-delay="0.1s">
+                    <div class="card h-100">
+                        <img src="img/Ekran Alıntısı 2.PNG" class="card-img-top image" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <a href="https://github.com/Archnimet">
+                                    <button type="button" class="btn let px-4 button text-uppercase text-center">
+                                        my web desıgn works
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Breath -->
+    <section class="breath-wall-two">
+                
+    </section>
+<!-- section-inspiration -->
+    <section id="section-inspiration" class="section-inspiration animated wow fadeInUp" data-wow-offset="100">
+        <div class="container">
+            <p style="color: rgb(71, 79, 88); letter-spacing: 2px;" class="text-one text-uppercase text-center animated wow fadeInLeft"> ınspıratıon </p>
+            <div class="container linia text-center my-3"></div>
+            <div class="row">
+                <div class="col-md-6 my-5 animated wow flipInY" data-wow-delay="0.5s">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/the holiday.jpg" class="img-fluid rounded-start img-ins" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">the holıday</h5>
+                                    <p class="card-text">Is it just a movie? It can never happen! I am looking for sentimentality in my life and I can find this sentimentality by experiencing it in this movie.</p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-5 animated wow flipInY" data-wow-delay="1s">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">f. joseph haydn</h5>
+                                    <p class="card-text">"There was no one near to confuse me, so i was forced to become original."</p>
+                                    <p class="card-text">Haydn, who completes every symphony with a story, has always been a source of inspiration for me.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/Joseph_Haydn.jpg" class="img-fluid float-end rounded-end img-ins" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 my-5 animated wow flipInY" data-wow-delay="0.5s">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/masumiyet-muzesi-yerli-ve-yabanci-turistlerden-buyuk-ilgi-goruyor.jpg" class="img-fluid rounded-start img-ins" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">masumiyet müzesi</h5>
+                                    <p class="card-text">"Happiness for me is being able to relive an unforgettable moment like this."</p>
+                                    <p class="card-text">"It was the happiest moment of my life, i did not know."</p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-5 animated wow flipInY" data-wow-delay="1s">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"> vıncent van gogh </h5>
+                                    <p class="card-text"> "The sense of nature will sooner or later be found in those who are interested in art. finds." </p>
+                                    <p class="card-text"> "I don't think there is anything more artistic than loving people." </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/artist__248946.jpg" class="img-fluid float-end rounded-end img-ins" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 my-5 animated wow flipInY" data-wow-delay="0.5s">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="img/Dancing-House-Dancing-House-Image-1-1024x723.jpg" class="img-fluid rounded-start img-ins" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Dancıng House </h5>
+                                    <p class="card-text"> The famous dancers Fred Astaire and Ginger Rogers are represented in the structure. A tower made of rock is used to represent Fred. This tower also includes a metal head. A tower made of glass is used to represent Ginger. </p>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-5 animated wow flipInY" data-wow-delay="1s">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title"> Antoni Gaudí </h5>
+                                    <p class="card-text"> "The tree in my side garden is an inspiration to me." Gaudí, expressed that everything can speak to us with the language of nature and reflected this understanding in his works. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="img/antoni gaudi.jpg" class="img-fluid float-end rounded-end img-ins" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Breath -->
+    <section class="breath-wall-three">
+                    
+    </section>
+<!-- section-contact-me -->
+    <section id="section-contact-me" class="section-contact animated wow fadeInUp" data-wow-offset="100">
+        <div class="box-contact">
+            <div class="container">
+                <p style="color: rgb(71, 79, 88); letter-spacing: 2px;" class="text-one text-uppercase text-center animated wow fadeInRight"> contact me </p>
+                <div class="container linia text-center mt-3 mb-5"></div>
+                <div class="row">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Name" aria-describedby="emailHelp" required>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Lastname" aria-describedby="emailHelp" required>
+                              </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp" required>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Phone" aria-describedby="emailHelp" required>
+                              </div>
+                        </div>
+                        <textarea class="form-control" id="subject" name="subject" placeholder="Your message..." style="height:150px"></textarea>
+                        <div style="margin-top: 12px;" class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="reset" class="btn btn-danger">
+                                Clear
+                            </button>
+                            <button type="submit" class="btn btn-info">
+                                Send message
+                            </button>
+                            <div class="d-grid gap-2 col-6 mx-auto wow animated flip" data-wow-delay=".7s" data-wow-iteration="2">
+                                <button  data-bs-toggle="modal" data-bs-target="#exxModal" class="btn button-click text-uppercase text-light" type="button">clıck me </button>
+                            </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Main-end -->
+<!-- Footer -->
+    <footer>
+        <div class="footer bg-dark bg-gradient d-flex justify-content-center align-items-center">
+            <div class="">
+                <p>"There is a strange reality in music that connects people and makes them look at each other differently."</p>
+                <p class=" d-flex justify-content-end">Hans Zimmer</p>
+                <p class="d-flex justify-content-center">ArtistParisA © 2022 Nimet Yoğurucu / Designer</p>
+            </div>
+        </div>
+    </footer>
+<!-- Footer -->
+
+<!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!-- External JS -->
+    <script src="app.js"></script>
+
+<!-- wow js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</body>
+</html>
